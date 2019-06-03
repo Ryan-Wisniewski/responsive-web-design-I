@@ -1,3 +1,266 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+body{
+	margin: 75px 90px;
+}
+
+.headerClass{   
+    margin: 0 0 15px 0;
+    display: flex;
+    flex-flow: auto;
+    align-items: auto;
+}
+
+.button{
+    display:flex;
+    flex: 1;
+	flex-flow: row nowrap;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.button a{
+    margin: 0 20px 0 0;
+    text-decoration: none;
+    color: grey;
+}
+
+.logo{
+    /* display: flex;
+    flex-flow: row wrap; */
+    /* justify-self: flex-end;
+    align-self: flex-end; */
+	object-fit: none;
+	padding: 15px 0;
+	/* margin: 15px 0; */
+}
+
+.sectionOne{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+}
+
+.sectionOne div{
+    display:flex;
+    flex-flow: column;
+    align-content: center;
+    align-items: center;
+}
+
+.bigStyle{
+    font-size: 300%;
+}
+
+.sectionOne button{
+    background-color: white;
+    padding: 5px 25px;
+    border: 2px solid black;
+    /* font-size: 14px; */
+    font-weight: bold;
+}
+
+
+.contentDiv{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+    margin: 20px 0;
+    padding: 30px 0;
+}
+
+.contentDiv article{
+	margin: 20px;
+}
+.parent{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+
+.parent{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.parentTwo{
+	display: flex;
+	flex-flow: row nowrap;
+}
+ .middle-img{
+	 width: 100%;
+	 height: 182px;
+ }
+
+ .contactDiv{
+     margin: 35px 0;
+ }
+
+ footer{
+	 display:flex;
+	 justify-content: center;
+	 align-content: center;
+	 margin: 35px 0;
+ }
+
+ 
+@media(max-width: 800px){
+    .headerClass{
+        display:flex;
+        flex-flow: column-reverse nowrap;
+        justify-items: center;
+        align-content: space-between;
+    }
+
+    body{
+        margin: 30px 15px;
+    }
+        
+    .logo{
+        margin: 20px;
+    }
+
+    .pictureFlex{
+        display: none;
+    }
+
+    .sectionOne{
+        display:flex;
+        flex-flow: column;
+        /* justify-items: center; */
+        align-items: center;
+        padding: 30px 0;
+    }
+
+}
+
+@media(max-width: 500px){
+    body{
+        margin: 10px 15px;
+    }
+
+    .headerClass{
+        /* padding: 0 0 50px 0; */
+        display: flex;
+        flex-flow: column-reverse;
+        /* justify-content: center; */
+    }
+
+    .headerClass nav{
+        
+        display: flex;
+        flex-flow: column;
+        justify-items: center;
+        justify-content: space-evenly;      
+
+    }
+
+    .headerClass nav a{
+        margin: 0;
+        border-bottom: 1px solid black;
+        padding: 15px 45%;
+    }
+
+    .logo{
+        padding: 0 0 15px 0;
+        border-bottom: 1px solid black;
+    }
+
+    .sectionOne{
+        margin: 40px 0 0 0;
+        padding: 20px 0;
+    }
+
+    /* .contentDiv{
+        display:flex;
+        flex-flow: column;
+    } */
+    
+    .parent{
+        display:flex;
+        flex-flow: column;
+        align-items: flex-start;
+    }
+
+    .parentTwo{
+        display:flex;
+        flex-flow: column;
+    }
+
+    .middle-img{
+        object-fit: none;
+        height: 92px;
+    }
+}
+
 
